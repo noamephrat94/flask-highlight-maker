@@ -10,4 +10,4 @@
 
 
 Full explenation coming soon.
-An explenation of the logic behind the program be found in this [medium post]([http://handlebarsjs.com/](https://betterprogramming.pub/automatically-creating-nba-highlights-in-5-minutes-7f90bfedd775))
+An explenation of the logic behind the program be found in this [medium post](http://handlebarsjs.com/](https://betterprogramming.pub/automatically-creating-nba-highlights-in-5-minutes-7f90bfedd775)
