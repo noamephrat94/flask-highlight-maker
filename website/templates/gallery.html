@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+    <br>
+    <h2 align="center">Gallery</h2>
+    {% for vid in Videos %}
+        <p>{{ "WOW", vid.game_name }}</p>
+    {% endfor %}
+
+    <section class="row vid_gallery">
+      {% for video in videos %}
+        <section class="col-md-4 col-sm-6">
+        <video width="100%" height="100%" controls>
+          <source src="{{ url_for('static', filename='videos/' + video) }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+{#        <p>{{"Does This Work?", video.game_name }}</p>#}
+        </section>
+      {% endfor %}
+    </section>
+    <br><br>
+
+{% endblock %}

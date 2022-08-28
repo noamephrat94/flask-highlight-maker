@@ -1,2 +1,2 @@
-# flask-highlight-maker
-Automatically create NBA highlights
+# highlight-generator
+ Automatically create NBA highlights from full game film

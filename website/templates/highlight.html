@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Create Highlights{% endblock %}
+
+{% block content %}
+<br>
+<h3 align="center">Create Highlights</h3>
+<br><br>
+{#    <div align="center" style="background-color: #1DA1F2; width: 40vw; height: 40vh" >#}
+{#    </div>#}
+<form method="POST" >
+<div align="center" >
+    <div class="form-group col-md-6">
+      <label style="float: left" for="team1">First Team</label>
+      <select id="team1" name="team1" class="form-control">
+        <option>{{ team }}</option>
+        {% for team in teams %}
+            <option>{{ team }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label style="float: left" for="team2">Second Team</label>
+      <select id="team2" name="team2" class="form-control">
+        <option>{{ team }}</option>
+        {% for team in teams %}
+            <option>{{ team }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+
+
+    <div class="form-group col-md-6">
+        <label style="float: left" for="date">Game Date</label>
+        <input
+            type="date"
+            class="form-control"
+            id="date"
+            name="date"
+            placeholder="Enter Game date mm-dd-yyyy"
+        />
+    </div>
+    <div class="form-group col-md-6">
+        <label style="float: left" for="firstName">Game URL</label>
+        <input
+            type="url"
+            class="form-control"
+            id="url"
+            name="url"
+            placeholder="Enter game URL"
+        />
+    </div>
+
+    <br/>
+    <button type="submit" class="btn btn-primary generate_btn" id="gen_btn" onclick="myFunction()"> Generate</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</div>
+</form>
+    <br><br>
+{% endblock %}
+
+
+{#    <div class="form-group">#}
+{#        <label for="team1">Team1</label>#}
+{#        <input#}
+{#            type="text"#}
+{#            class="form-control"#}
+{#            id="team1"#}
+{#            name="team1"#}
+{#            placeholder="Enter team1"#}
+{#        />#}
+{#    </div>#}
+{#    <div class="form-group">#}
+{#        <label for="team2">Team2</label>#}
+{#        <input#}
+{#            type="text"#}
+{#            class="form-control"#}
+{#            id="team2"#}
+{#            name="team2"#}
+{#            placeholder="Enter team2"#}
+{#        />#}
+{#    </div>#}
+

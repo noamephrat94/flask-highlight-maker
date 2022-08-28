@@ -1,0 +1,81 @@
+@media screen and (max-width: 600px) {
+  ul img {
+    width: 8px;
+      height: 8px;
+  }
+
+    .scores_ul li{
+        font-size: 1.5vh;
+        margin-top: 0px!important;
+        padding: 10px;
+        flex-direction: row;
+    }
+        .scores_ul li div{
+        width: max-content;
+    }
+    .scores{
+        height:10vh
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+      ul img {
+      width: 8px;
+      height: 8px;
+  }
+    .vid_gallery{
+        width: 100%!important;
+        align-items: center;
+    }
+    .vid_gallery video{
+        width: 100%!important;
+        height: 100%!important;
+    }
+        .scores{
+        height:10vh
+    }
+}
+
+
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: 60px;
+margin-top: 10px;
+}
+.videoTitle{
+    background-color: #EEEEEE;
+    padding: 2px;
+}
+
+.loader_before {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  .loader_after {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .generate_btn{
+      display: inline;
+  }
+  .generate_btn2{
+    display: none;
+}
